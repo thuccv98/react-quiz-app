@@ -5,8 +5,13 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Quiz from './pages/Quiz/Quiz';
 import Result from './pages/Result/Result';
+import { useState } from 'react';
 
 function App() {
+  const [name, setName] = useState('');
+
+  const fetchQuestions = () => {};
+
   return (
     <Router>
       <div className="App">
@@ -14,7 +19,11 @@ function App() {
 
         <Switch>
           <Route path="/" exact>
-            <Home />
+            <Home
+              name={name}
+              setName={setName}
+              fetchQuestions={fetchQuestions}
+            />
           </Route>
           <Route path="/quiz" exact>
             <Quiz />
