@@ -20,7 +20,7 @@ function App() {
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
 
-    setQuestions(data.Result);
+    setQuestions(data.results);
   };
 
   return (
@@ -37,7 +37,13 @@ function App() {
             />
           </Route>
           <Route path="/quiz" exact>
-            <Quiz />
+            <Quiz
+              name={name}
+              questions={questions}
+              score={score}
+              setScore={setScore}
+              setQuestions={setQuestions}
+            />
           </Route>
           <Route path="/result" exact>
             <Result />
