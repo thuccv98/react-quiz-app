@@ -46,7 +46,10 @@ const Question = ({
     }
   };
 
-  const handleQuit = () => {};
+  const handleQuit = () => {
+    setCurrQues(0);
+    setQuestions();
+  };
 
   return (
     <div className="question">

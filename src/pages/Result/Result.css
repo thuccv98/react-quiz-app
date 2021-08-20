@@ -1,0 +1,13 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.result__title {
+  text-transform: uppercase;
+  font-size: 8vw;
+  font-family: 'Space Grotesk', sans-serif;
+}
