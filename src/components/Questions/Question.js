@@ -29,7 +29,7 @@ const Question = ({
 
   const handleCheck = (i) => {
     setSelected(i);
-    if (i === correct) setScore(score + 1);
+    if (i === correct) setScore(score + 100);
     setError(false);
   };
 

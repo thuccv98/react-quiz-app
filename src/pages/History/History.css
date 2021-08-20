@@ -1,0 +1,23 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.history__title {
+  text-transform: uppercase;
+  font-size: 8vw;
+  font-family: 'Space Grotesk', sans-serif;
+  padding-bottom: 15px;
+}
+.history__item {
+  font-size: 2vw;
+  padding-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .history__item {
+    font-size: 16px;
+  }
+}

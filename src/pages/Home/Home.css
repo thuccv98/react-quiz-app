@@ -1,6 +1,7 @@
 .content {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .settings {
@@ -40,4 +41,8 @@
   width: 100%;
   flex: 0.8;
   justify-content: space-evenly;
+}
+.content__link {
+  font-style: oblique;
+  color: deeppink;
 }

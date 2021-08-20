@@ -7,6 +7,7 @@ import Quiz from './pages/Quiz/Quiz';
 import Result from './pages/Result/Result';
 import { useState } from 'react';
 import axios from 'axios';
+import History from './pages/History/History';
 
 function App() {
   const [name, setName] = useState('');
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route path="/result" exact>
             <Result name={name} score={score} />
+          </Route>
+          <Route path="/history" exact>
+            <History />
           </Route>
         </Switch>
       </div>

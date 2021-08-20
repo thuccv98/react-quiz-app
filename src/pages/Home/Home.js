@@ -2,7 +2,7 @@ import { Button, MenuItem, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import './Home.css';
 import { Categories } from '../../Data/Categories';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
 const Home = ({ name, setName, fetchQuestions }) => {
@@ -80,6 +80,9 @@ const Home = ({ name, setName, fetchQuestions }) => {
       </div>
 
       <img src="/quiz.svg" alt="quizimg" className="banner" />
+      <Link to="/history" className="content__link">
+        History🧾
+      </Link>
     </div>
   );
 };
