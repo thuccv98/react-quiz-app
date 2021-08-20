@@ -41,12 +41,14 @@ hr {
 }
 .singleOption:hover {
   transform: scale(1.05);
-  background-color: goldenrod;
 }
 
-@media (max-width: 614px) {
+@media (max-width: 767px) {
   .singleOption {
     width: 100%;
+  }
+  .singleOption:hover {
+    transform: scale(1);
   }
 }
 

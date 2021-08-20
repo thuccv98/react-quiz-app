@@ -76,7 +76,7 @@ const Question = ({
             variant="contained"
             color="secondary"
             size="large"
-            style={{ width: 185 }}
+            style={{ width: 185, marginRight: 10 }}
             href="/"
             onClick={handleQuit}
           >
