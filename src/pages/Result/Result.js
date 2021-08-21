@@ -40,10 +40,10 @@ const Result = ({ name, score }) => {
       </Button>
       <Button
         variant="contained"
-        color="secondary"
+        color="primary"
         size="large"
         style={{ alignSelf: 'center', marginTop: 20 }}
-        href="/history"
+        href="/"
         onClick={handleSave}
       >
         Save Achievements
